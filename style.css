@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+:root{
+    --orange:#DC780B;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.nav__items{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin-right: 500px;
+    font-size: 17px;
+    font-weight: 500;
+    color: gray;
+}
+
+.nav__items li:hover{
+    color: var(--orange);
+}
+
+.nav button{
+    width: 155px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    font-size: 17px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border: none;
+}
+
+.nav button:active{
+    background-color: #dc770bbd;
+}
+
+.header{
+    display: flex;
+    gap: 50px;
+}
+
+.header__left{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    gap: 50px;
+}
+
+.header__left h1{
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 57.6px;
+    font-family: "Philosopher", sans-serif;
+}
+
+.header__left p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(94, 92, 92);
+}
+
+.header__left__btn1{
+    width: 158px;
+    height: 60px;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    color: white;
+    background-color: #DC780B;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.header__left__btn1:active{
+    background-color: #dc770bc9;
+}
+
+.header__left__btn2{
+    width: 158px;
+    height: 60px;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    color: #ab5b05bd;
+}
+
+.header__left__btn2:active{
+    color: #dc770bb3;
+}
+
+.passion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.passion__top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.passion__top p{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 7px;
+    color: #DC780B;
+    margin-bottom: 5px;
+    line-height: 24px;
+}
+
+.passion__top h2{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Philosopher", sans-serif;
+   
+}
+
+.passion__bottom{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.passion__items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.passion__items p{
+    text-align: center;
+    color: rgb(88, 87, 87);
+   
+}
+
+.passion__items h2{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Philosopher", sans-serif;
+    margin-bottom: 7px;
+}
+
+.about{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    gap: 110px;
+}
+
+.about__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 35px;
+    margin-bottom: 90px;
+}
+
+.about__right span{
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #c36706;
+    letter-spacing: 3px;
+}
+
+.about__right h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    font-family: "Philosopher", sans-serif;
+}
+
+.about__right p{
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(71, 70, 70);
+}
+
+.about__right button{
+    width: 142px;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500;
+    background-color: #c36706;
+}
+
+.about__right button:active{
+    background-color: #c36806c9;
+}
+
+.menu{
+    width: 100%;
+    margin: 50px 0;
+}
+
+.menu__top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu__top span{
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #ab5b05bd;
+    letter-spacing: 4px;
+}
+
+.menu__top h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: "Philosopher", sans-serif;
+}
+
+.menu__top p{
+    text-align: center;
+    color: rgb(63, 63, 63);
+}
+
+.menu__bottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    gap: 30px;
+}
+
+.menu__items{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 18px;
+}
+
+.menu__btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__btn button{
+    width: 36px;
+    height: 34px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c36706;
+    color: white;
+    font-size: 20px;
+    margin-right: 230px;
+}
+
+.menu__btn button:active{
+    background-color: #c36806af;
+}
+
+.menu__items p{
+    color: rgb(76, 75, 75);
+}
+
+.menu_footer_btn{
+    width: 143px;
+    height: 42px;
+    border: none;
+    border-radius: 2px;
+    color: #c36706;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 560px;
+}
+
+.menu_footer_btn:active{
+    color: #c36806c2;
+}
+
+.product__box{
+    width: 100%;
+    background-color: #f1f0f0;
+}
+
+.product{
+    display: flex;
+    padding: 30px 0;
+}
+
+.product_items{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.product_items span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #c36706;
+}
+
+.product_items h2{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Philosopher", sans-serif;
+}
+
+.product_items p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(94, 93, 93);
+}
+
+.product_item{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_btn{
+    display: flex;
+    gap: 25px;
+}
+
+.btn__left{
+    
+}
+
+.btn__left button{
+    width: 163px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 18px;
+}
+
+.btn__right button{
+    width: 163px;
+    height: 48px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.Testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.Testimonial span{
+    font-size: 19px;
+    font-weight: 500;
+    color: #c36706;
+    letter-spacing: 5px;
+}
+
+.Testimonial h2{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Philosopher", sans-serif;
+}
+
+.Testimonial p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(69, 69, 69);
+}
+
+.Testimonial img{
+    margin: 20px;
+}
+
+.contact_box{
+    background-color: #f7f4f0;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+    gap: 20px;
+}
+
+.contact span{
+    font-size: 19px;
+    font-weight: 500;
+    color: #c36706;
+    letter-spacing: 5px;
+}
+
+.contact h2{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Philosopher", sans-serif;
+}
+
+.contact__input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__input input{
+    width: 350px;
+    padding: 15px 5px;
+    font-size: 16px;
+}
+
+.contact__input button{
+    width: 120px;
+    padding: 15px 5px;
+    border-radius: 0 6px 6px 0;
+    background-color: #c36706;
+    color: white;
+    font-size: 16px;
+}
+
+.contact__input button:active{
+    background-color: #c36806be;
+}
+
+.footer__box{
+    width: 100%;
+    background-color: #252525;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    color: gray;
+    line-height: 18px;
+}
+
+.footer h4{
+    color: white;
+}
+
+.footer__items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 12px;
+}
